@@ -126,4 +126,6 @@ function resetData() {
 }
 
 // ▶ Run dashboard
-window.onload = updateDashboard;
+if (document.getElementById("income")) {
+  window.onload = updateDashboard;
+}
