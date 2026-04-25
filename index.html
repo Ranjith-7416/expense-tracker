@@ -3,56 +3,12 @@
 <head>
   <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
-<div class="nav">
-  <h3>📊 Expense Dashboard</h3>
-  <div>
-    <button onclick="toggleDark()">🌙</button>
-    <a href="app.html"><button>Go to App</button></a>
-  </div>
-</div>
+<h1>Dashboard Page</h1>
+<a href="app.html">Go to App</a>
 
-<div class="container">
-
-<p class="warning" id="warning"></p>
-
-<button class="reset-btn" onclick="resetData()">🔄 Reset All Data</button>
-
-<div class="cards">
-
-  <div class="card">
-    <h3>Income</h3>
-    <h2 id="income">₹0</h2>
-  </div>
-
-  <div class="card">
-    <h3>Budget</h3>
-    <h2 id="budget">₹0</h2>
-  </div>
-
-  <div class="card">
-    <h3>Expenses</h3>
-    <h2 id="expense">₹0</h2>
-  </div>
-
-  <div class="card">
-    <h3>Balance</h3>
-    <h2 id="balance">₹0</h2>
-  </div>
-
-</div>
-
-<div class="chart-box">
-  <h3>Expense by Category</h3>
-  <canvas id="pieChart"></canvas>
-</div>
-
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
