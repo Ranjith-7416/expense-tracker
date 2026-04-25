@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="nav">
+  <h3>💰 Expense App</h3>
+  <div>
+    <button onclick="toggleDark()">🌙</button>
+    <a href="dashboard.html"><button>Dashboard</button></a>
+  </div>
+</div>
+
+<div class="container">
+
+<p id="msg" class="msg"></p>
+
+<h2>Set Income</h2>
+<input type="number" id="initialBalance">
+<button onclick="setBalance()">Set Income</button>
+
+<h2>Set Budget</h2>
+<input type="number" id="budgetInput">
+<button onclick="setBudget()">Set Budget</button>
+
+<h2>Add Expense</h2>
+<form id="form">
+  <input type="text" id="text" placeholder="Description" required>
+  <input type="number" id="amount" placeholder="Amount" required>
+
+  <select id="category" onchange="playSelect()">
+    <option>Food</option>
+    <option>Travel</option>
+    <option>Shopping</option>
+    <option>Other</option>
+  </select>
+
+  <button>Add Expense</button>
+</form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

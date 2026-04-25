@@ -1,0 +1,85 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: blue;
+  color: white;
+  padding: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+.chart-box {
+  width: 350px;
+  height: 350px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dark .chart-box {
+  background: #1e1e1e;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background: blue;
+  color: white;
+  border: none;
+}
+
+.reset-btn {
+  background: red;
+  color: white;
+  margin: 10px 0;
+}
+
+.msg {
+  text-align: center;
+  color: green;
+}
+
+.warning {
+  text-align: center;
+  color: red;
+}
