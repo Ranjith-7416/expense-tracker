@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Expense App</title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
 <div class="nav">
-  <h3>💰 Expense App</h3>
+  <h3>📊 Expense Dashboard</h3>
   <div>
     <button onclick="toggleDark()">🌙</button>
-    <a href="dashboard.html"><button>Dashboard</button></a>
+    <a href="app.html"><button>Go to App</button></a>
   </div>
 </div>
 
 <div class="container">
 
-<p id="msg" class="msg"></p>
+<p class="warning" id="warning"></p>
 
-<h2>Set Income</h2>
-<input type="number" id="initialBalance">
-<button onclick="setBalance()">Set Income</button>
+<button class="reset-btn" onclick="resetData()">🔄 Reset All Data</button>
 
-<h2>Set Budget</h2>
-<input type="number" id="budgetInput">
-<button onclick="setBudget()">Set Budget</button>
+<div class="cards">
 
-<h2>Add Expense</h2>
-<form id="form">
-  <input type="text" id="text" placeholder="Description" required>
-  <input type="number" id="amount" placeholder="Amount" required>
+  <div class="card">
+    <h3>Income</h3>
+    <h2 id="income">₹0</h2>
+  </div>
 
-  <select id="category" onchange="playSelect()">
-    <option>Food</option>
-    <option>Travel</option>
-    <option>Shopping</option>
-    <option>Other</option>
-  </select>
+  <div class="card">
+    <h3>Budget</h3>
+    <h2 id="budget">₹0</h2>
+  </div>
 
-  <button>Add Expense</button>
-</form>
+  <div class="card">
+    <h3>Expenses</h3>
+    <h2 id="expense">₹0</h2>
+  </div>
+
+  <div class="card">
+    <h3>Balance</h3>
+    <h2 id="balance">₹0</h2>
+  </div>
+
+</div>
+
+<div class="chart-box">
+  <h3>Expense by Category</h3>
+  <canvas id="pieChart"></canvas>
+</div>
 
 </div>
 
